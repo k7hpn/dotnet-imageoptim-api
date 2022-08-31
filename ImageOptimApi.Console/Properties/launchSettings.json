@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ImageOptimApi.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "--test -i c:\\temp\\2022_Squares.png\r\n"
+    }
+  }
+}
