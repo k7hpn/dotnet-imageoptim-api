@@ -33,6 +33,7 @@ LABEL branch=$branch \
     org.opencontainers.image.created=$IMAGE_CREATED \
     org.opencontainers.image.description="ImageOptimApi provides .NET access to the ImageOptim.com service" \
     org.opencontainers.image.documentation="http://github.com/MCLD/net-imageoptim-api" \
+    org.opencontainers.image.source="https://github.com/MCLD/net-imageoptim-api" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.revision=$IMAGE_REVISION \
     org.opencontainers.image.source="https://github.com/MCLD/net-imageoptim-api" \
