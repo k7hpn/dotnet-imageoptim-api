@@ -16,7 +16,7 @@
     <RepositoryUrl>https://github.com/MCLD/dotnet-imageoptim-api</RepositoryUrl>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Title>ImageOptim API</Title>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>

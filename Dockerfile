@@ -38,13 +38,12 @@ LABEL branch=$branch \
     org.opencontainers.image.authors="Maricopa County Library District developers <development@mcldaz.org>" \
     org.opencontainers.image.created=$IMAGE_CREATED \
     org.opencontainers.image.description="ImageOptimApi provides .NET access to the ImageOptim.com service" \
-    org.opencontainers.image.documentation="http://github.com/MCLD/net-imageoptim-api" \
-    org.opencontainers.image.source="https://github.com/MCLD/net-imageoptim-api" \
+    org.opencontainers.image.documentation="http://github.com/MCLD/dotnet-imageoptim-api" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.revision=$IMAGE_REVISION \
-    org.opencontainers.image.source="https://github.com/MCLD/net-imageoptim-api" \
+    org.opencontainers.image.source="https://github.com/MCLD/dotnet-imageoptim-api" \
     org.opencontainers.image.title="ImageOptimApi" \
-    org.opencontainers.image.url="https://github.com/MCLD/net-imageoptim-api" \
+    org.opencontainers.image.url="https://github.com/MCLD/dotnet-imageoptim-api" \
     org.opencontainers.image.vendor="Maricopa County Library District" \
     org.opencontainers.image.version=$IMAGE_VERSION
 
