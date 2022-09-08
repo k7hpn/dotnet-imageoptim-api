@@ -1,10 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <InformationalVersion>0.1.beta</InformationalVersion>
+    <Authors>Maricopa County Library District Web Team</Authors>
     <Company>Maricopa County Library District</Company>
+    <Copyright>Copyright (c) 2022 Maricopa County Library District</Copyright>
+    <Description>Access the ImageOptim.com API from Microsoft.NET</Description>
+    <LangVersion>latest</LangVersion>
+    <PackageId>ImageOptimApi</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/MCLD/dotnet-imageoptim-api</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>image optimizaton;image;optimization;compression;jpeg;png</PackageTags>
+    <PackRelease>true</PackRelease>
+    <ProjectUrl>https://github.com/MCLD/dotnet-imageoptim-api</ProjectUrl>
+    <RepositoryUrl>https://github.com/MCLD/dotnet-imageoptim-api</RepositoryUrl>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Title>ImageOptim API</Title>
+    <Version>0.0.2</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="True" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />

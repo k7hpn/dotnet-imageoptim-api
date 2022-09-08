@@ -1,12 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <InformationalVersion>0.1.beta</InformationalVersion>
+    <Authors>Maricopa County Library District Web Team</Authors>
     <Company>Maricopa County Library District</Company>
+    <Copyright>Copyright (c) 2022 Maricopa County Library District</Copyright>
+    <Description>Console app to access the ImageOptim.com API</Description>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <ProjectUrl>https://github.com/MCLD/dotnet-imageoptim-api</ProjectUrl>
+    <RepositoryUrl>https://github.com/MCLD/dotnet-imageoptim-api</RepositoryUrl>
+    <TargetFramework>net6.0</TargetFramework>
+    <Version>0.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
