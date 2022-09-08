@@ -2,7 +2,7 @@
   "profiles": {
     "ImageOptimApi.Console": {
       "commandName": "Project",
-      "commandLineArgs": "--test -i c:\\temp\\2022_Squares.png\r\n"
+      "commandLineArgs": "--test -i C:\\windows\\web\\Screen\\img100.jpg"
     }
   }
 }
