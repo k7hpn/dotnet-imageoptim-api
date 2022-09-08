@@ -8,7 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+
+      - name: Create environment file
+        run: echo NUGET_API_KEY=${{ secrets.NUGET_API_KEY }} >> release.env
 
       - name: Run build.bash
         env:
@@ -20,3 +23,8 @@ jobs:
           GHCR_PAT: ${{secrets.GHCR_PAT}}
           GHCR_USER: ${{secrets.GHCR_USER}}
         run: ./build.bash -p
+
+      - uses: actions/upload-artifact@v3
+        with:
+          path: package/ImageOptimApi.*.nupkg
+          if-no-files-found: ignore
