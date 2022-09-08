@@ -13,10 +13,16 @@ ARG IMAGE_VERSION=unknown
 RUN dotnet restore
 
 # Publish release project
-RUN dotnet publish -c Release -o "/app/publish/"
+RUN dotnet build -c Release
+
+# Generate NuGet package
+RUN dotnet pack -c Release ImageOptimApi -o "/app/publish/"
+
+# Copy release-publish.bash script
+RUN cp /app/release-publish.bash "/app/publish/"
 
 # Get runtime image
-FROM mcr.microsoft.com/dotnet/runtime:6.0@sha256:9096e96d53e771e7bb76b94fa9a527534eef6cae3371306148071632ab1a0d2c AS publish
+FROM mcr.microsoft.com/dotnet/sdk:6.0@sha256:43fd9b5215ce226ec22c3283c674e4625ce7caec1ffd47de40218f71a3fd1511 AS publish
 
 WORKDIR /app
 
@@ -51,4 +57,4 @@ ENV org.opencontainers.image.created=$IMAGE_CREATED \
 COPY --from=build "/app/publish/" .
 
 # Set entrypoint
-ENTRYPOINT ["dotnet", "ImageOptimApi.Console.dll"]
+ENTRYPOINT ["/app/release-publish.bash"]
