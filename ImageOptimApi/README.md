@@ -4,7 +4,7 @@ This library provides access to the [ImageOptim.com API](https://imageoptim.com/
 
 **This is a third party library and just consumes the ImageOptim API. It is not directly affiliated with ImageOptim.com.**
 
-Issues found in this library should be filed at it's home: <https://github.com/MCLD/dotnet-imageoptim-api>
+Issues found in this library should be filed at: <https://github.com/MCLD/dotnet-imageoptim-api>
 
 [ImageOptim.com](https://imageoptim.com/api) is a Web service for image compression and optimization. You will need to [register for a free trial username](https://imageoptim.com/api/register) in order to use this library.
 
@@ -28,7 +28,7 @@ Add the following packages to your project:
 
 After the `builder` object is created, add the `ImageOptimApi.Client` to the `IServiceCollection`. You can set some global parameters here for the `HttpClient` that will make the Web calls:
 
-- Please leave `AllowAutoRedirect`on per [ImageOptim API documentation](https://imageoptim.com/api/post)
+- Please leave `AllowAutoRedirect`on per [ImageOptim API documentation](https://imageoptim.com/api/post).
 - Configure the timeout here both for the `HttpClient` as well as what is passed into the ImageOptim API. A good default is 30 seconds.
 - Please add a `UserAgent` header with the name of your product and the version.
 

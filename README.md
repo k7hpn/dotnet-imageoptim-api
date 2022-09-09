@@ -1,14 +1,12 @@
 # ImageOptimApi
 
-This project provides access to the [ImageOptim.com API](https://imageoptim.com/api) from Microsoft .NET.
+This project provides access to the [ImageOptim.com API](https://imageoptim.com/api) from Microsoft .NET. **If you want to consume the API in your project, you probably want [the NuGet package](https://www.nuget.org/packages/ImageOptimApi).**
 
 **This is a third party library and just consumes the ImageOptim API. It is not directly affiliated with ImageOptim.com.**
 
-Issues found in this library should be filed at it's home: <https://github.com/MCLD/dotnet-imageoptim-api>
+Issues found in this library should be filed at: <https://github.com/MCLD/dotnet-imageoptim-api>
 
 [ImageOptim.com](https://imageoptim.com/api) is a Web service for image compression and optimization. You will need to [register for a free trial username](https://imageoptim.com/api/register) in order to use this library.
-
-**If you want to consume the API in your project, you probably want [the NuGet package](https://www.nuget.org/packages/ImageOptimApi).**
 
 See sample C# code using the NuGet package at: [MCLD/SampleImageOptimApi](https://github.com/MCLD/SampleImageOptimApi)
 
