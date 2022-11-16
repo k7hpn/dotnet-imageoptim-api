@@ -16,7 +16,7 @@
     <RepositoryUrl>https://github.com/MCLD/dotnet-imageoptim-api</RepositoryUrl>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Title>ImageOptim API</Title>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,7 +25,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
   </ItemGroup>
 
 </Project>
